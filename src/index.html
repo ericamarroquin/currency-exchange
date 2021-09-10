@@ -28,7 +28,17 @@
     <div class="showTargetCurrency"></div>
     <div class="showErrors"></div>
 
-    <p>Want to convert to a currency not shown? <span class="moreCurrency">Click here.</span></p>
+    <div class="moreCurrency">
+      <p>Want to convert to a currency not shown? <span class="showMoreCurrency">Click here</span>.</p>
+      <form class="form-inline">
+        <label class="sr-only" for="newAmount">USD:</label>
+        <input id="newAmount" class="form-control mb-2 mr-sm-2" type="text" placeholder="USD">
+
+        <label class="sr-only" for="newTarget">USD:</label>
+        <input id="newTarget" class="form-control mb-2 mr-sm-2" type="text" placeholder="HKD">
+      </form>
+      <button class="btn-success mb-2" id="convertMoreCurrency">Convert</button>
+    </div>
   </div>
 </body>
 </html>
