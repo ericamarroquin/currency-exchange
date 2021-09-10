@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Currency Exchanger</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Currency Exchange</h1>
+    <h3>Enter a value in USD and choose a currency to convert it to!</h3>
+    
+    <form class="form-inline">
+      <label class="sr-only" for="amount">USD:</label>
+      <input id="amount" class="form-control mb-2 mr-sm-2" type="text" placeholder="USD">
+
+      <label for="targetCurrency"></label>
+      <select class="form-control mb-2 mr-sm-2" id="targetCurrency">
+        <option value="EUR">Euro</option>
+        <option value="JPY">Japanese Yen</option>
+        <option value="GBP">Pound Sterling</option>
+        <option value="AUD">Australian Dollar</option>
+        <option value="CAD">Canadian Dollar</option>
+      </select>
+
+      <button class="btn-success mb-2" id="convertCurrency">Convert</button>
+    </form>
+  </div>
+</body>
+</html>
