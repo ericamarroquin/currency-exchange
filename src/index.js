@@ -14,6 +14,7 @@ function getElements(response) {
   if (response.result === "success") {
     $('.showTargetCurrency').text(`is equal to ${response.conversion_result} ${response.target_code}`);
   } else {
+    $('.showBaseCurrency').text("");
     $('.showErrors').text(`There was an error: ${response.message}`);
   }
 }
@@ -30,7 +31,3 @@ $(document).ready(function() {
       });
   });
 });
-
-// $(document).ready(function() {
-//   $('#convertCurrency').click()
-// })
